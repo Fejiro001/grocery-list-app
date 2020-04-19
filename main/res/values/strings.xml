@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Lists</string>
+    <string name="do_activity">Click the button below to create your first list</string>
+    <string name="another_activity">Click the button to start adding products</string>
+</resources>

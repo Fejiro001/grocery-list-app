@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00c994</color>
+    <color name="colorPrimaryDark">#00b585</color>
+    <color name="colorAccent">#17e0aa</color>
+    <color name="buttonPrimary">#ffb424</color>
+    <color name="newActivityText">#ffffff</color>
+    <color name="createPrimary">#BFFFB424</color>
+    <color name="newActivity">#2196F3</color>
+    <color name="edit">@android:color/darker_gray</color>
+</resources>
