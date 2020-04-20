@@ -17,6 +17,7 @@ public class MessageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
 
+        //Finds the textView by id
         receive = (TextView)findViewById(R.id.received);
         receive1 = (TextView)findViewById(R.id.received1);
         receive2 = (TextView)findViewById(R.id.received2);
@@ -24,6 +25,7 @@ public class MessageActivity extends AppCompatActivity {
         receive4 = (TextView)findViewById(R.id.received4);
         receive5 = (TextView)findViewById(R.id.received5);
 
+        //Connects the editText views to the textViews
         receive.setText(getIntent().getStringExtra("message_key"));
         receive1.setText(getIntent().getStringExtra("message_key1"));
         receive2.setText(getIntent().getStringExtra("message_key2"));
@@ -31,6 +33,7 @@ public class MessageActivity extends AppCompatActivity {
         receive4.setText(getIntent().getStringExtra("message_key4"));
         receive5.setText(getIntent().getStringExtra("message_key5"));
     }
+    //Inflates the menu item in the activity
     @Override
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,6 +43,8 @@ public class MessageActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
 
     }
+    //On clicking the share button
+    //Added a click listener to my menu item, and used an intent to pop up the share menu
     @Override
 
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -62,7 +67,7 @@ public class MessageActivity extends AppCompatActivity {
 
                         i,
 
-                        "Title of your share dialog"));
+                        "Share using"));
 
                 break;
 
