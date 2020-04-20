@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 
 public class NewListActivity extends AppCompatActivity implements View.OnClickListener{
+    //Declared the button and editText views
     Button doneBtn;
     EditText name, name1, name2, price, price1, price2;
 
@@ -16,6 +17,7 @@ public class NewListActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_list);
         
+        //Finds the button and editText views by id
         doneBtn = (Button) findViewById(R.id.done);
         name = (EditText) findViewById(R.id.editText);
         name1 = (EditText) findViewById(R.id.editText1);
@@ -26,6 +28,7 @@ public class NewListActivity extends AppCompatActivity implements View.OnClickLi
 
         doneBtn.setOnClickListener(this);
     }
+    //On clicking the done button, it will pass the inputs as strings for the next activity
     @Override
     public void onClick(View v) {
         Intent intent=new Intent(this, MessageActivity.class);
