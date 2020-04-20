@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".NewListActivity">
 
-    <!-- Main content -->
+    <!-- On clicking the button the final grocery list shows -->
     <Button
         android:id="@+id/done"
         android:layout_width="wrap_content"
@@ -41,6 +41,7 @@
         app:layout_constraintStart_toEndOf="@id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--User inputs name of grocery and its price-->
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
