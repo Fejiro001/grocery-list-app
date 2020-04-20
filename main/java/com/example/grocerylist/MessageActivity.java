@@ -61,7 +61,7 @@ public class MessageActivity extends AppCompatActivity {
 
                 i.putExtra(
 
-                        android.content.Intent.EXTRA_TEXT, "The string you want to share, which can include URLs");
+                        android.content.Intent.EXTRA_TEXT, "This is my grocery list");
 
                 startActivity(Intent.createChooser(
 
